@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Bookshelf App Dicoding</title>
+  </head>
+  <body>
+    <header class="text--center">
+      <h1 style="text-align: center">Bookshelf Apps Dicoding</h1>
+    </header>
+
+    <section class="wrapper">
+      <div class="card">
+        <div class="card--title">
+          <h2 style="text-align: center">Masukan Buku Baru!</h2>
+        </div>
+        <div class="card--form">
+          <form class="form" action="#" id="inputBook">
+            <div class="form-group">
+              <label for="judulBuku">Judul</label>
+              <input type="text" id="judulBuku" placeholder="Masukan Judul Buku" required />
+            </div>
+            <div class="form-group">
+              <label for="penulisBuku">Penulis</label>
+              <input type="text" placeholder="Isi Penulis Buku" id="penulisBuku" required />
+            </div>
+            <div class="form-group">
+              <label for="tahunBuku">Tahun</label>
+              <input type="number" placeholder="Isi Tahun Buku" id="tahunBuku" required />
+            </div>
+            <div class="form-check">
+              <label for="isComplete" style="font-weight: normal; font-size: 12px">Sudah selesai dibaca</label>
+              <input type="checkbox" id="isComplete" />
+            </div>
+            <input class="btn" type="submit" value="Tambahkan Buku" name="Submit" />
+          </form>
+        </div>
+      </div>
+      <section>
+        <div class="card search">
+          <h2 style="text-align: center; margin-bottom: 1rem">Cari Buku</h2>
+          <form class="form-search">
+            <label for="searchBook">Judul</label>
+            <input type="text" placeholder="Cari Buku" id="searchBook" />
+            <button id="searchBtn">Cari</button>
+          </form>
+          <div class="list-book" id="search"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card">
+          <h2>Belum Selesai Dibaca</h2>
+          <div class="list-books" id="books"></div>
+        </div>
+        <div class="card">
+          <h2>Sudah Selesai Dibaca</h2>
+          <div class="list-books" id="completed-books"></div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
